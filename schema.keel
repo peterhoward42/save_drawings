@@ -10,7 +10,7 @@ model Drawing {
     }
 
     @permission(
-        actions: [get, list, update, delete],
+        actions: [create, get, list, update, delete],
         expression: true
     )
 }
