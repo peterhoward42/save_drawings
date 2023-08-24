@@ -1,0 +1,16 @@
+model Drawing {
+    fields {
+        content Text
+    }
+
+    operations {
+        create createDrawing() with (content)
+        list listDrawings()
+        get getDrawingById(id)
+    }
+
+    @permission(
+        actions: [get, list, update, delete],
+        expression: true
+    )
+}
