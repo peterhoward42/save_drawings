@@ -3,7 +3,7 @@ model Drawing {
         content Text
     }
 
-    operations {
+    actions {
         create createDrawing() with (content)
         list listDrawings()
         get getDrawingById(id)
